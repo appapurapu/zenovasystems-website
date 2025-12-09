@@ -19,9 +19,10 @@ jobs:
         service_account_key: ${{ secrets.GCP_SA_KEY }}
         project_id: ${{ secrets.GCP_PROJECT_ID }}
 
-    - name: Set bucket variable
-      run: echo "BUCKET=${{ secrets.GCP_BUCKET_NAME }}" >> $GITHUB_ENV
+    - name: Set GCP bucket name
+      run: echo "GCP_BUCKET_NAME=${{ secrets.GCP_BUCKET_NAME }}" >> "$GITHUB_ENV"
 
     - name: Sync website to Cloud Storage
-      run: gsutil -m rsync -r ./ "gs://${BUCKET}"
-
+      run: |
+        echo "Deploying to bucket: $GCP_BUCKET_NAME"
+        gsutil -m rsync -r ./ "gs://$GCP_BUCKET_NAME"
