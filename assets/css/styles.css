@@ -1,0 +1,217 @@
+/* -----------------------------------------------------
+   Base Theme Colors
+----------------------------------------------------- */
+:root {
+    --primary: #005eff;
+    --primary-dark: #0041b3;
+    --text: #222;
+    --text-light: #555;
+    --bg: #ffffff;
+    --bg-light: #f5f8ff;
+    --card-bg: #ffffff;
+    --border: #e2e6f0;
+}
+
+/* Dark Mode Variables */
+body.dark-mode {
+    --bg: #0f172a;
+    --bg-light: #1e293b;
+    --text: #e2e8f0;
+    --text-light: #94a3b8;
+    --card-bg: #1e293b;
+    --border: #334155;
+    --primary: #60a5fa;
+    --primary-dark: #3b82f6;
+}
+
+/* -----------------------------------------------------
+   Global
+----------------------------------------------------- */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", system-ui, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+a {
+    color: var(--primary);
+    text-decoration: none;
+}
+
+h1, h2, h3 {
+    margin: 0;
+    font-weight: 700;
+}
+
+/* -----------------------------------------------------
+   Navbar
+----------------------------------------------------- */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--bg);
+    padding: 16px 24px;
+    border-bottom: 1px solid var(--border);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--primary);
+}
+
+/* Dark Mode Toggle */
+.theme-toggle {
+    margin-left: auto;
+    font-size: 1.3rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--text);
+    padding: 6px;
+    transition: color 0.3s ease;
+}
+
+/* Desktop Menu */
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 24px;
+    margin: 0;
+    padding: 0;
+}
+
+/* Mobile Menu Toggle */
+.menu-toggle {
+    display: none;
+    font-size: 1.6rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--text);
+}
+
+/* -----------------------------------------------------
+   Mobile Nav Behavior
+----------------------------------------------------- */
+@media (max-width: 768px) {
+    .nav-menu {
+        position: absolute;
+        top: 65px;
+        right: 0;
+        background: var(--bg);
+        width: 220px;
+        list-style: none;
+        flex-direction: column;
+        padding: 16px;
+        border-left: 1px solid var(--border);
+        border-bottom: 1px solid var(--border);
+        display: none;
+    }
+
+    .nav-menu.open {
+        display: flex;
+        animation: fadeIn 0.25s ease;
+    }
+
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(-5px); }
+        to   { opacity: 1; transform: translateY(0); }
+    }
+
+    .menu-toggle {
+        display: block;
+        margin-left: 12px;
+    }
+}
+
+/* -----------------------------------------------------
+   Hero Section
+----------------------------------------------------- */
+.hero {
+    padding: 60px 20px;
+    text-align: center;
+    background: var(--bg-light);
+    border-bottom: 1px solid var(--border);
+}
+
+.hero h1 {
+    font-size: 2.2rem;
+    margin-bottom: 16px;
+}
+
+.hero p {
+    max-width: 650px;
+    margin: 0 auto;
+    color: var(--text-light);
+    font-size: 1.1rem;
+}
+
+/* -----------------------------------------------------
+   Sections
+----------------------------------------------------- */
+.section {
+    padding: 50px 20px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.section-title {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* -----------------------------------------------------
+   Cards
+----------------------------------------------------- */
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 24px;
+}
+
+.card {
+    background: var(--card-bg);
+    padding: 22px;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    transition: box-shadow 0.25s ease, transform 0.25s ease;
+}
+
+.card:hover {
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    transform: translateY(-4px);
+}
+
+/* -----------------------------------------------------
+   About Page Card Styling
+----------------------------------------------------- */
+.about-card {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 30px;
+    border-radius: 16px;
+    background: var(--card-bg);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+}
+
+
+/* -----------------------------------------------------
+   Footer
+----------------------------------------------------- */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: var(--bg-light);
+    border-top: 1px solid var(--border);
+    color: var(--text-light);
+}
+
