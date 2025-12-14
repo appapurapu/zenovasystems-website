@@ -5,65 +5,80 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About – Zenova Systems</title>
+    <meta name="description" content="Learn about the mission, capabilities, and future vision for Zenova Systems across cloud, AI, Android, embedded, and quantum engineering." />
+    <meta property="og:title" content="About Zenova Systems" />
+    <meta property="og:description" content="Discover the story and focus areas driving Zenova Systems." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://zenovasystems.com/about.html" />
+    <link rel="canonical" href="https://zenovasystems.com/about.html" />
     <link rel="stylesheet" href="assets/css/styles.css" />
 </head>
 
 <body>
+<div class="page-shell">
+    <div class="page-card">
+        <nav class="navbar">
+            <a class="logo" href="index.html" aria-label="Zenova Systems home">Zenova Systems</a>
 
-<nav class="navbar">
-    <div class="logo">Zenova Systems</div>
-    <div class="hamburger" onclick="toggleMenu()">☰</div>
-    <ul class="nav-links" id="navMenu">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="solutions.html">Solutions</a></li>
-        <li><a href="blog/index.html">Blog</a></li>
-        <li><a href="about.html" class="active">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><button id="themeToggle" class="theme-btn">🌙</button></li>
-    </ul>
-</nav>
+            <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark mode">🌙</button>
 
-<section class="hero">
-    <h1>About Zenova Systems</h1>
-    <p>Where engineering expertise meets innovation.</p>
-</section>
+            <button id="menuToggle" class="menu-toggle"
+                    aria-label="Toggle navigation menu"
+                    aria-controls="navMenu"
+                    aria-expanded="false"
+                    onclick="toggleMenu()">☰</button>
 
-<section class="section">
-    <div class="card" style="max-width:900px; margin:auto;">
+            <ul id="navMenu" class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="solutions.html">Solutions</a></li>
+                <li><a href="blog/index.html">Blog</a></li>
+                <li><a href="about.html" class="active">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
 
-    <h3>Who I Am</h3>
-    <p>
-        A senior software engineer with 15+ years experience across Cloud (GCP), AI/ML, Quantum,
-        Android, Embedded, Automotive, Distributed Systems, C++, Python, Rust, IoT.
-    </p>
+        <main class="page-content">
+            <section class="hero">
+                <div class="chip">Studio Story</div>
+                <h1>Engineering leadership with a builder's mindset.</h1>
+                <p>Zenova Systems is run by a senior engineer with 15+ years across Google Cloud, AI/ML, quantum, Android Automotive, embedded, and large-scale distributed systems.</p>
+                <div class="actions">
+                    <a class="btn-primary" href="contact.html">Connect with Zenova</a>
+                </div>
+            </section>
 
-    <h3>Core Focus Areas</h3>
-    <ul>
-        <li>Google Cloud engineering, serverless & DevOps</li>
-        <li>AI/ML engineering, LLM pipelines</li>
-        <li>Quantum Machine Learning (QML), QCNNs</li>
-        <li>Android Framework, HAL, Automotive</li>
-        <li>RTOS, firmware, embedded sensors</li>
-        <li>Low-latency C++ & system design</li>
-    </ul>
+            <section class="section">
+                <div class="card card-narrow">
+                    <h3>Who I Am</h3>
+                    <p>
+                        Cloud native platform builder, AI/ML engineer, quantum researcher, and systems architect experienced in C++, Python, and Rust. Focused on product velocity with reliable engineering.
+                    </p>
 
-    <h3>The Future</h3>
-    <p>
-        Zenova Systems will evolve into a software innovation company offering cloud solutions,
-        AI tools, quantum R&D, engineering blogs, and developer platforms.
-    </p>
+                    <h3>Core Focus Areas</h3>
+                    <ul>
+                        <li>Google Cloud engineering, serverless & DevOps</li>
+                        <li>AI/ML engineering, LLM pipelines, evaluation</li>
+                        <li>Quantum Machine Learning (QML), QCNNs</li>
+                        <li>Android Framework, HAL, Automotive IVI</li>
+                        <li>RTOS, firmware, embedded sensors</li>
+                        <li>Low-latency C++ & system design</li>
+                    </ul>
 
+                    <h3>The Future</h3>
+                    <p>
+                        Zenova Systems is becoming an innovation studio delivering cloud products, AI tools, quantum R&D, engineering blogs, and developer experiences.
+                    </p>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>© 2025 Zenova Systems. All rights reserved.</p>
+        </footer>
+    </div>
 </div>
 
-</section>
-
-<footer>
-    <p>© 2025 Zenova Systems. All rights reserved.</p>
-</footer>
-
-<!-- JS -->
 <script src="assets/js/main.js"></script>
 </body>
 </html>
-

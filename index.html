@@ -4,66 +4,81 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Zenova Systems</title>
+    <meta name="description" content="Zenova Systems unites Google Cloud, AI/ML, Android Automotive, embedded systems, and quantum research into modern engineering solutions." />
+    <meta property="og:title" content="Zenova Systems" />
+    <meta property="og:description" content="Engineering the future with Google Cloud, AI, Android, embedded, and quantum expertise." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://zenovasystems.com/" />
+    <link rel="canonical" href="https://zenovasystems.com/" />
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
 <body>
-<nav class="navbar">
-    <div class="logo">Zenova Systems</div>
+<div class="page-shell">
+    <div class="page-card">
+        <nav class="navbar">
+            <a class="logo" href="index.html" aria-label="Zenova Systems home">Zenova Systems</a>
 
-    <!-- Dark Mode Toggle -->
-    <button id="themeToggle" class="theme-toggle">🌙</button>
+            <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark mode">🌙</button>
 
-    <!-- Mobile Menu Toggle -->
-    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+            <button id="menuToggle" class="menu-toggle"
+                    aria-label="Toggle navigation menu"
+                    aria-controls="navMenu"
+                    aria-expanded="false"
+                    onclick="toggleMenu()">☰</button>
 
-    <!-- Navigation Menu -->
-    <ul id="navMenu" class="nav-menu">
-        <li><a href="index.html" style="color:var(--primary);">Home</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="solutions.html">Solutions</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-    </ul>
-</nav>
+            <ul id="navMenu" class="nav-menu">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="solutions.html">Solutions</a></li>
+                <li><a href="blog/index.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
 
-<section class="hero">
-    <h1>Engineering the Future: Cloud, AI, Android & Quantum</h1>
-    <p>
-        Zenova Systems is a personal engineering platform evolving into a full-scale
-        software innovation company specializing in Google Cloud, AI/ML, Android Automotive,
-        Embedded Systems & Quantum Computing.
-    </p>
-</section>
+        <main class="page-content">
+            <section class="hero">
+                <div class="chip">Engineering + Research Platform</div>
+                <h1>Cloud, AI, Android Automotive & Quantum Experiences</h1>
+                <p>
+                    Zenova Systems is evolving into a modern software innovation studio building across
+                    Google Cloud, AI/ML, Android Automotive, embedded systems, and quantum R&D.
+                </p>
+                <div class="actions">
+                    <a class="btn-primary" href="services.html">Explore Services →</a>
+                    <a class="btn-secondary" href="contact.html">Start a Conversation</a>
+                </div>
+            </section>
 
-<section class="section">
-    <h2 class="section-title">What Zenova Systems Offers</h2>
+            <section class="section">
+                <h2 class="section-title">What Zenova Systems Offers</h2>
 
-    <div class="card-grid">
+                <div class="card-grid">
+                    <div class="card">
+                        <h3>Google Cloud Engineering</h3>
+                        <p>Serverless systems, Cloud Run, Vertex AI, platform automation.</p>
+                    </div>
 
-        <div class="card">
-            <h3>Google Cloud Engineering</h3>
-            <p>GCP Compute, Cloud Run, Vertex AI & serverless systems.</p>
-        </div>
+                    <div class="card">
+                        <h3>AI, ML & Quantum Research</h3>
+                        <p>LLM applications, ML pipelines, QML prototypes, QCNNs, experimentation.</p>
+                    </div>
 
-        <div class="card">
-            <h3>AI, ML & Quantum Research</h3>
-            <p>AI applications, LLM pipelines, QML, QCNNs & hybrid quantum models.</p>
-        </div>
+                    <div class="card">
+                        <h3>Android / Automotive / Embedded</h3>
+                        <p>AOSP internals, HAL integration, IVI experiences, RTOS + firmware.</p>
+                    </div>
+                </div>
+            </section>
+        </main>
 
-        <div class="card">
-            <h3>Android / Automotive / Embedded</h3>
-            <p>AOSP, HAL, IVI, RTOS, sensors, automotive-grade system engineering.</p>
-        </div>
-
+        <footer>
+            <p>© 2025 Zenova Systems. All rights reserved.</p>
+        </footer>
     </div>
-</section>
+</div>
 
-<footer>
-    <p>© 2025 Zenova Systems. All rights reserved.</p>
-</footer>
-
-<!-- JS -->
 <script src="assets/js/main.js"></script>
 </body>
 </html>

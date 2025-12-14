@@ -5,75 +5,92 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Services – Zenova Systems</title>
+    <meta name="description" content="Zenova Systems delivers Google Cloud, AI/ML, quantum, Android, embedded, and technical writing services backed by industry expertise." />
+    <meta property="og:title" content="Zenova Systems Services" />
+    <meta property="og:description" content="Specialized consulting across Google Cloud, AI/ML, Android Automotive, embedded, and quantum systems." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://zenovasystems.com/services.html" />
+    <link rel="canonical" href="https://zenovasystems.com/services.html" />
     <link rel="stylesheet" href="assets/css/styles.css" />
-    <script defer src="assets/js/main.js"></script>
 </head>
 
 <body>
+<div class="page-shell">
+    <div class="page-card">
+        <nav class="navbar">
+            <a class="logo" href="index.html" aria-label="Zenova Systems home">Zenova Systems</a>
 
-<nav class="navbar">
-    <div class="logo">Zenova Systems</div>
-    <div class="hamburger" onclick="toggleMenu()">☰</div>
-    <ul class="nav-links" id="navMenu">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="services.html" class="active">Services</a></li>
-        <li><a href="solutions.html">Solutions</a></li>
-        <li><a href="blog/index.html">Blog</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><button id="themeToggle" class="theme-btn">🌙</button></li>
-    </ul>
-</nav>
+            <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark mode">🌙</button>
 
-<section class="hero">
-    <h1>Engineering Services</h1>
-    <p>Specialized consulting backed by real industry experience.</p>
-</section>
+            <button id="menuToggle" class="menu-toggle"
+                    aria-label="Toggle navigation menu"
+                    aria-controls="navMenu"
+                    aria-expanded="false"
+                    onclick="toggleMenu()">☰</button>
 
-<section class="section">
+            <ul id="navMenu" class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html" class="active">Services</a></li>
+                <li><a href="solutions.html">Solutions</a></li>
+                <li><a href="blog/index.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
 
-<div class="card-grid">
+        <main class="page-content">
+            <section class="hero">
+                <div class="chip">Consulting & Delivery Services</div>
+                <h1>Hands-on engineering to launch reliable platforms.</h1>
+                <p>Deep, senior-level execution across Google Cloud, AI/ML, quantum experimentation, Android Automotive, and embedded software.</p>
+                <div class="actions">
+                    <a class="btn-primary" href="contact.html">Book a call</a>
+                    <a class="btn-secondary" href="solutions.html">View solutions</a>
+                </div>
+            </section>
 
-<div class="card">
-    <h3>Google Cloud (GCP)</h3>
-    <p>Cloud Run, Compute Engine, App Engine, IAM, VPC, Vertex AI.</p>
+            <section class="section">
+                <h2 class="section-title">Specialties</h2>
+                <div class="card-grid">
+                    <div class="card">
+                        <h3>Google Cloud (GCP)</h3>
+                        <p>Cloud Run, Compute, App Engine, IAM, networking, Vertex AI, foundations & SRE.</p>
+                    </div>
+
+                    <div class="card">
+                        <h3>AI & Machine Learning</h3>
+                        <p>LLM apps, retrieval pipelines, applied AI, data engineering, MLOps automation.</p>
+                    </div>
+
+                    <div class="card">
+                        <h3>Quantum Computing</h3>
+                        <p>QML, QCNN research, hybrid classical/quantum prototyping, benchmarking.</p>
+                    </div>
+
+                    <div class="card">
+                        <h3>Android / Automotive</h3>
+                        <p>AOSP internals, vehicle HAL, IVI UX, system services, performance tuning.</p>
+                    </div>
+
+                    <div class="card">
+                        <h3>Embedded & IoT</h3>
+                        <p>RTOS, sensors, firmware safety, automotive-grade integrations, low-level C++.</p>
+                    </div>
+
+                    <div class="card">
+                        <h3>Technical Writing</h3>
+                        <p>GCP and AI deep dives, thought leadership, developer education, launch content.</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>© 2025 Zenova Systems. All rights reserved.</p>
+        </footer>
+    </div>
 </div>
 
-<div class="card">
-    <h3>AI & Machine Learning</h3>
-    <p>ML pipelines, LLM apps, applied AI, MLOps.</p>
-</div>
-
-<div class="card">
-    <h3>Quantum Computing</h3>
-    <p>QML, QCNNs, quantum-classical hybrid development.</p>
-</div>
-
-<div class="card">
-    <h3>Android / Automotive</h3>
-    <p>AOSP internals, HAL, IVI features, vehicle services.</p>
-</div>
-
-<div class="card">
-    <h3>Embedded & IoT</h3>
-    <p>RTOS, sensors, firmware, automotive embedded.</p>
-</div>
-
-<div class="card">
-    <h3>Technical Writing</h3>
-    <p>GCP tutorials, AI/ML deep dives, quantum education.</p>
-</div>
-
-</div>
-
-</section>
-
-<footer>
-    <p>© 2025 Zenova Systems. All rights reserved.</p>
-</footer>
-
-<!-- JS -->
 <script src="assets/js/main.js"></script>
 </body>
 </html>
-

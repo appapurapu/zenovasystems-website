@@ -5,61 +5,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog – Zenova Systems</title>
+    <meta name="description" content="Read the latest from Zenova Systems on Google Cloud, AI/ML, Android, embedded systems, and quantum innovation." />
+    <meta property="og:title" content="Zenova Systems Blog" />
+    <meta property="og:description" content="Insights on Google Cloud, AI, Android Automotive, embedded, and quantum engineering." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://zenovasystems.com/blog/" />
+    <link rel="canonical" href="https://zenovasystems.com/blog/" />
     <link rel="stylesheet" href="../assets/css/styles.css">
-    <script defer src="../assets/js/main.js"></script>
 </head>
 
 <body>
+<div class="page-shell">
+    <div class="page-card">
+        <nav class="navbar">
+            <a class="logo" href="../index.html" aria-label="Zenova Systems home">Zenova Systems</a>
 
-<nav class="navbar">
-    <div class="logo">Zenova Systems</div>
-    <div class="hamburger" onclick="toggleMenu()">☰</div>
+            <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark mode">🌙</button>
 
-<ul class="nav-links" id="navMenu">
-    <li><a href="../index.html">Home</a></li>
-    <li><a href="../services.html">Services</a></li>
-    <li><a href="../solutions.html">Solutions</a></li>
-    <li><a href="index.html" class="active">Blog</a></li>
-    <li><a href="../about.html">About</a></li>
-    <li><a href="../contact.html">Contact</a></li>
-    <li><button id="themeToggle" class="theme-btn">🌙</button></li>
-</ul>
+            <button id="menuToggle" class="menu-toggle"
+                    aria-label="Toggle navigation menu"
+                    aria-controls="navMenu"
+                    aria-expanded="false"
+                    onclick="toggleMenu()">☰</button>
 
-</nav>
+            <ul id="navMenu" class="nav-menu">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../services.html">Services</a></li>
+                <li><a href="../solutions.html">Solutions</a></li>
+                <li><a href="index.html" class="active">Blog</a></li>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+            </ul>
+        </nav>
 
-<section class="hero">
-    <h1>Zenova Systems Blog</h1>
-    <p>GCP tutorials, AI/ML updates, Quantum Computing, Android & Embedded Engineering.</p>
-</section>
+        <main class="page-content">
+            <section class="hero">
+                <div class="chip">Insights & Deep Dives</div>
+                <h1>Zenova Systems Blog</h1>
+                <p>GCP tutorials, AI/ML updates, quantum experiments, Android & embedded engineering notes.</p>
+            </section>
 
-<section class="section">
-    <div class="card-grid">
+            <section class="section">
+                <div class="card-grid">
+                    <a href="post-template.html" class="card blog-card">
+                        <h3>Build & Deploy on Cloud Run</h3>
+                        <p>Learn to deploy your app using Docker & serverless infra.</p>
+                    </a>
 
-    <a href="post-template.html" class="card blog-card">
-        <h3>Build & Deploy on Cloud Run</h3>
-        <p>Learn to deploy your app using Docker & serverless infra.</p>
-    </a>
+                    <a href="post-template.html" class="card blog-card">
+                        <h3>Understanding QCNNs</h3>
+                        <p>The future of quantum deep learning.</p>
+                    </a>
 
-    <a href="post-template.html" class="card blog-card">
-        <h3>Understanding QCNNs</h3>
-        <p>The future of quantum deep learning.</p>
-    </a>
+                    <a href="post-template.html" class="card blog-card">
+                        <h3>Android Automotive HAL</h3>
+                        <p>A deep dive into vehicle service architecture.</p>
+                    </a>
+                </div>
+            </section>
+        </main>
 
-    <a href="post-template.html" class="card blog-card">
-        <h3>Android Automotive HAL</h3>
-        <p>A deep dive into vehicle service architecture.</p>
-    </a>
-
+        <footer>
+            <p>© 2025 Zenova Systems. All rights reserved.</p>
+        </footer>
+    </div>
 </div>
 
-</section>
-
-<footer>
-    <p>© 2025 Zenova Systems. All rights reserved.</p>
-</footer>
-
-<!-- JS -->
-<script src="assets/js/main.js"></script>
+<script src="../assets/js/main.js"></script>
 </body>
 </html>
-

@@ -5,55 +5,68 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact – Zenova Systems</title>
+    <meta name="description" content="Connect with Zenova Systems for engineering partnerships across cloud, AI/ML, Android, embedded, and quantum initiatives." />
+    <meta property="og:title" content="Contact Zenova Systems" />
+    <meta property="og:description" content="Get in touch for cloud consulting, AI projects, quantum R&D, and embedded engineering collaborations." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://zenovasystems.com/contact.html" />
+    <link rel="canonical" href="https://zenovasystems.com/contact.html" />
     <link rel="stylesheet" href="assets/css/styles.css" />
-    <script defer src="assets/js/main.js"></script>
 </head>
 
 <body>
+<div class="page-shell">
+    <div class="page-card">
+        <nav class="navbar">
+            <a class="logo" href="index.html" aria-label="Zenova Systems home">Zenova Systems</a>
 
-<nav class="navbar">
-    <div class="logo">Zenova Systems</div>
-    <div class="hamburger" onclick="toggleMenu()">☰</div>
-    <ul class="nav-links" id="navMenu">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="solutions.html">Solutions</a></li>
-        <li><a href="blog/index.html">Blog</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html" class="active">Contact</a></li>
-        <li><button id="themeToggle" class="theme-btn">🌙</button></li>
-    </ul>
-</nav>
+            <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark mode">🌙</button>
 
-<section class="hero">
-    <h1>Get in Touch</h1>
-    <p>Engineering, cloud consulting or collaborations.</p>
-</section>
+            <button id="menuToggle" class="menu-toggle"
+                    aria-label="Toggle navigation menu"
+                    aria-controls="navMenu"
+                    aria-expanded="false"
+                    onclick="toggleMenu()">☰</button>
 
-<section class="section">
+            <ul id="navMenu" class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="solutions.html">Solutions</a></li>
+                <li><a href="blog/index.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
 
-<div class="card" style="max-width:650px; margin:auto; text-align:center;">
-    <h3>Email</h3>
-    <p><strong>info@zenovasystems.com</strong></p>
+        <main class="page-content">
+            <section class="hero">
+                <div class="chip">Collaborations & Engagements</div>
+                <h1>Let's build reliable, future-ready systems together.</h1>
+                <p>Whether it's Google Cloud modernization, AI/ML platforms, Android Automotive, or quantum R&D—Zenova Systems partners on strategy + execution.</p>
+            </section>
 
-<h3>Collaboration</h3>
-<p>
-    Open to cloud projects, AI/ML work, quantum R&D, Android/embedded consulting,
-    technical writing & engineering partnerships.
-</p>
+            <section class="section">
+                <div class="card card-compact text-center">
+                    <h3>Email</h3>
+                    <p><strong>info@zenovasystems.com</strong></p>
 
-<a href="mailto:info@zenovasystems.com" class="btn-primary">Send Email</a>
+                    <h3>Collaboration</h3>
+                    <p>
+                        Open to cloud projects, AI/ML work, quantum R&D, Android/embedded consulting,
+                        technical writing & engineering partnerships.
+                    </p>
 
+                    <a href="mailto:info@zenovasystems.com" class="btn-primary-link">Send Email</a>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>© 2025 Zenova Systems. All rights reserved.</p>
+        </footer>
+    </div>
 </div>
 
-</section>
-
-<footer>
-    <p>© 2025 Zenova Systems. All rights reserved.</p>
-</footer>
-
-<!-- JS -->
 <script src="assets/js/main.js"></script>
 </body>
 </html>
-
