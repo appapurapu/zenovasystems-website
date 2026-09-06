@@ -1,92 +1,170 @@
-<!DOCTYPE html>
-
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Solutions – Zenova Systems</title>
-    <meta name="description" content="Explore Zenova Systems solutions spanning cloud-native platforms, AI, Android Automotive, embedded systems, and quantum R&D." />
-    <meta property="og:title" content="Zenova Systems Solutions" />
-    <meta property="og:description" content="Cloud, AI, Android, embedded, and quantum solutions engineered for modern platforms." />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://zenovasystems.com/solutions.html" />
-    <link rel="canonical" href="https://zenovasystems.com/solutions.html" />
-    <link rel="stylesheet" href="assets/css/styles.css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projects & Solutions | Zenova Systems</title>
+  <meta name="description" content="Explore Zenova Systems project and solution directions across embedded AI, Android Automotive, connected devices, cloud platforms, systems performance, and quantum machine learning.">
+  <link rel="canonical" href="https://zenovasystems.com/solutions.html">
+  <link rel="stylesheet" href="assets/css/zenova-theme.css">
 </head>
-
 <body>
-<div class="page-shell">
-    <div class="page-card">
-        <nav class="navbar">
-            <a class="logo" href="index.html" aria-label="Zenova Systems home">Zenova Systems</a>
-
-            <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark mode">🌙</button>
-
-            <button id="menuToggle" class="menu-toggle"
-                    aria-label="Toggle navigation menu"
-                    aria-controls="navMenu"
-                    aria-expanded="false"
-                    onclick="toggleMenu()">☰</button>
-
-            <ul id="navMenu" class="nav-menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="solutions.html" class="active">Solutions</a></li>
-                <li><a href="blog/index.html">Blog</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-
-        <main class="page-content">
-            <section class="hero">
-                <div class="chip">Solution Accelerators</div>
-                <h1>Patterns to launch modern platforms faster.</h1>
-                <p>Battle-tested blueprints for cloud-native products, AI copilots, automotive software, and intelligent devices.</p>
-                <div class="actions">
-                    <a class="btn-primary" href="contact.html">Discuss a build</a>
-                    <a class="btn-secondary" href="blog/index.html">Read case studies</a>
-                </div>
-            </section>
-
-            <section class="section">
-                <h2 class="section-title">Featured Solutions</h2>
-
-                <div class="card-grid">
-                    <div class="card">
-                        <h3>Cloud Architecture</h3>
-                        <p>Serverless apps, CI/CD pipelines, containers, observability, FinOps readiness.</p>
-                    </div>
-
-                    <div class="card">
-                        <h3>AI & Quantum</h3>
-                        <p>Production AI systems, QML prototypes, QCNN experiments, evaluation harnesses.</p>
-                    </div>
-
-                    <div class="card">
-                        <h3>Android Systems</h3>
-                        <p>Vehicle HAL integration, system services, Android Automotive experiences.</p>
-                    </div>
-
-                    <div class="card">
-                        <h3>IoT & Embedded</h3>
-                        <p>Firmware engineering, sensor fusion, RTOS devices, digital twins.</p>
-                    </div>
-
-                    <div class="card">
-                        <h3>Developer Tools</h3>
-                        <p>Cloud dashboards, AI utilities, diagnostics and observability platforms.</p>
-                    </div>
-                </div>
-            </section>
-        </main>
-
-        <footer>
-            <p>© 2025 Zenova Systems. All rights reserved.</p>
-        </footer>
+  <header class="site-header">
+    <div class="wrap nav">
+      <a class="brand" href="/"><span class="brand-mark">Z</span><span>Zenova Systems</span></a>
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="primary-nav">Menu</button>
+      <nav class="nav-links" id="primary-nav" aria-label="Primary navigation">
+        <a href="services.html">Engineering</a>
+        <a href="/#research">Research</a>
+        <a class="active" href="solutions.html">Projects</a>
+        <a href="blog/">Insights</a>
+        <a href="about.html">About</a>
+        <a class="nav-cta" href="contact.html">Contact</a>
+      </nav>
     </div>
-</div>
+  </header>
 
-<script src="assets/js/main.js"></script>
+  <main>
+    <section class="page-hero">
+      <div class="wrap">
+        <div class="eyebrow">Projects & Solutions</div>
+        <h1><span class="gradient-text">Applied architectures</span><br>for intelligent connected systems.</h1>
+        <p class="lead">Representative engineering and research directions that combine embedded software, AI, automotive platforms, connectivity, cloud services, and system-level reliability.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#projects">Explore Projects →</a>
+          <a class="btn btn-secondary" href="contact.html">Discuss an Architecture</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <div class="section-kicker">Applied systems</div>
+            <h2>Projects that connect multiple engineering layers.</h2>
+          </div>
+          <p>These concepts reflect Zenova's emphasis on full-system architecture rather than isolated components.</p>
+        </div>
+
+        <div class="grid-2">
+          <article class="card">
+            <div class="card-tag">Embedded AI</div>
+            <h3>Voice-first in-cab AI assistant</h3>
+            <p>Dedicated compute, secondary display, audio, machine interfaces, grounded Q&A, diagnostics, logging, OTA, connectivity, and reliability for an intelligent in-cab experience.</p>
+            <a class="card-link" href="blog/">Explore related insights →</a>
+          </article>
+
+          <article class="card">
+            <div class="card-tag">Android Automotive</div>
+            <h3>AAOS platform integration</h3>
+            <p>Android framework services, Binder IPC, HAL integration, audio, Bluetooth, Wi-Fi, SELinux, build-system work, native components, and hardware interfaces.</p>
+            <a class="card-link" href="services.html">View engineering capabilities →</a>
+          </article>
+
+          <article class="card">
+            <div class="card-tag">Connected Devices</div>
+            <h3>Secure edge-to-cloud platform</h3>
+            <p>Device identity, telemetry, backend APIs, logging, diagnostics, OTA workflows, observability, secure communication, and scalable cloud integration.</p>
+            <a class="card-link" href="contact.html">Discuss the architecture →</a>
+          </article>
+
+          <article class="card">
+            <div class="card-tag">AI / Performance</div>
+            <h3>AI-assisted systems debugging</h3>
+            <p>Use structured logs, traces, profiling data, code context, and LLM-assisted analysis to accelerate root-cause investigation of deadlocks, races, latency, and resource issues.</p>
+            <a class="card-link" href="blog/">Read technical directions →</a>
+          </article>
+
+          <article class="card">
+            <div class="card-tag">Edge ML</div>
+            <h3>On-device anomaly detection</h3>
+            <p>TensorFlow/TFLite pipelines for constrained hardware using quantization, pruning, latency tuning, feature engineering, and runtime performance measurement.</p>
+            <a class="card-link" href="services.html">Explore AI engineering →</a>
+          </article>
+
+          <article class="card">
+            <div class="card-tag">Quantum R&D</div>
+            <h3>QCNN & hybrid ML research</h3>
+            <p>Experiments around quantum convolutional neural networks, classical preprocessing, encoding strategies, trainable circuits, and hybrid evaluation workflows.</p>
+            <a class="card-link" href="/#research">View research direction →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <div class="section-kicker">Architecture pattern</div>
+            <h2>Device → platform → intelligence → cloud.</h2>
+          </div>
+          <p>A reusable way to think about connected intelligent systems from the hardware boundary to user-facing services.</p>
+        </div>
+
+        <div class="grid-3">
+          <article class="card">
+            <div class="card-tag">Layer 01</div>
+            <h3>Device & Hardware</h3>
+            <p>Sensors, audio, displays, processors, buses, radios, machine interfaces, storage, and hardware-specific constraints.</p>
+          </article>
+          <article class="card">
+            <div class="card-tag">Layer 02</div>
+            <h3>Platform & Services</h3>
+            <p>Linux/AOSP services, drivers, HALs, IPC, lifecycle, diagnostics, security, policy, middleware, and application interfaces.</p>
+          </article>
+          <article class="card">
+            <div class="card-tag">Layer 03</div>
+            <h3>Intelligence & Cloud</h3>
+            <p>ML inference, LLM reasoning, backend APIs, telemetry, data pipelines, observability, OTA, analytics, and connected experiences.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <div class="section-kicker">Design priorities</div>
+            <h2>What makes a prototype production-oriented.</h2>
+          </div>
+          <p>The strongest architectures account for failure and operations from the beginning.</p>
+        </div>
+
+        <div class="grid-3">
+          <article class="card"><div class="card-tag">Reliability</div><h3>Failure-aware design</h3><p>Timeouts, retries, degraded modes, watchdogs, state recovery, fault isolation, and deterministic behavior.</p></article>
+          <article class="card"><div class="card-tag">Security</div><h3>Trust boundaries</h3><p>Authentication, authorization, secure transport, device identity, least privilege, code/data protection, and update integrity.</p></article>
+          <article class="card"><div class="card-tag">Observability</div><h3>Explain system behavior</h3><p>Structured logs, metrics, traces, diagnostics, crash data, health status, remote troubleshooting, and measurable KPIs.</p></article>
+          <article class="card"><div class="card-tag">Performance</div><h3>Resource discipline</h3><p>Latency, CPU, memory, power, bandwidth, storage, scheduling, contention, and predictable real-time behavior.</p></article>
+          <article class="card"><div class="card-tag">Maintainability</div><h3>Clear contracts</h3><p>Stable interfaces, modular services, compatibility, versioning, ownership boundaries, testing, and deployment discipline.</p></article>
+          <article class="card"><div class="card-tag">Evolution</div><h3>Design for change</h3><p>OTA, feature flags, telemetry-driven improvement, extensible APIs, modular AI components, and safe platform evolution.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="wrap">
+        <div class="cta-box">
+          <div class="section-kicker">Continue exploring</div>
+          <h2>Go deeper into the architecture and engineering decisions.</h2>
+          <p>Zenova Insights turns these system concepts into technical notes, design explanations, experiments, and implementation-focused articles.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="blog/">Read Insights →</a>
+            <a class="btn btn-secondary" href="about.html">About Zenova</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap footer-row">
+      <div>© <span data-year></span> Zenova Systems. Engineering + Applied Research.</div>
+      <div class="footer-links"><a href="/">Home</a><a href="about.html">About</a><a href="contact.html">Contact</a></div>
+    </div>
+  </footer>
+  <script src="assets/js/zenova-theme.js"></script>
 </body>
 </html>
