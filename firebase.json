@@ -1,0 +1,17 @@
+{
+  "hosting": {
+    "public": ".",
+    "ignore": [
+      "firebase.json",
+      ".firebaserc",
+      ".git/**",
+      ".github/**",
+      "google-cloud-sdk/**",
+      "google-cloud-cli-*.tar.gz",
+      "**/.*",
+      "**/node_modules/**",
+      "README.md",
+      "LICENSE"
+    ]
+  }
+}
