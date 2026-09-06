@@ -1,85 +1,705 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Zenova Systems</title>
-    <meta name="description" content="Zenova Systems unites Google Cloud, AI/ML, Android Automotive, embedded systems, and quantum research into modern engineering solutions." />
-    <meta property="og:title" content="Zenova Systems" />
-    <meta property="og:description" content="Engineering the future with Google Cloud, AI, Android, embedded, and quantum expertise." />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://zenovasystems.com/" />
-    <link rel="canonical" href="https://zenovasystems.com/" />
-    <link rel="stylesheet" href="assets/css/styles.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Zenova Systems | AI, Embedded, Automotive & Cloud Engineering</title>
+  <meta name="description" content="Zenova Systems is an engineering and applied research platform focused on AI/ML, embedded and edge systems, Android Automotive, cloud platforms, systems performance, and emerging computing.">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <meta name="theme-color" content="#07111f">
+  <link rel="canonical" href="https://zenovasystems.com/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Zenova Systems | Engineering Intelligent Systems from Edge to Cloud">
+  <meta property="og:description" content="Applied R&D across AI/ML, embedded systems, automotive software, cloud platforms, and emerging computing.">
+  <meta property="og:url" content="https://zenovasystems.com/">
+  <meta property="og:site_name" content="Zenova Systems">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Zenova Systems">
+  <meta name="twitter:description" content="Engineering intelligent systems from edge to cloud.">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Zenova Systems",
+    "url": "https://zenovasystems.com/",
+    "description": "Engineering and applied research across AI/ML, embedded systems, automotive software, cloud platforms, and emerging computing."
+  }
+  </script>
+
+  <style>
+    :root {
+      --bg: #06101d;
+      --bg-soft: #0a1727;
+      --panel: rgba(14, 30, 49, .72);
+      --panel-solid: #0c1b2d;
+      --text: #f5f8fc;
+      --muted: #9eb0c5;
+      --line: rgba(151, 175, 201, .16);
+      --brand: #58d5ff;
+      --brand-2: #7d7cff;
+      --accent: #76f2c2;
+      --white: #fff;
+      --shadow: 0 24px 80px rgba(0, 0, 0, .28);
+      --radius: 22px;
+      --max: 1180px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at 12% 8%, rgba(88, 213, 255, .13), transparent 28rem),
+        radial-gradient(circle at 88% 13%, rgba(125, 124, 255, .12), transparent 31rem),
+        var(--bg);
+      line-height: 1.6;
+    }
+    a { color: inherit; text-decoration: none; }
+    img { max-width: 100%; }
+    button, a { -webkit-tap-highlight-color: transparent; }
+    .wrap { width: min(calc(100% - 40px), var(--max)); margin: 0 auto; }
+
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      backdrop-filter: blur(16px);
+      background: rgba(6, 16, 29, .76);
+      border-bottom: 1px solid var(--line);
+    }
+    .nav {
+      min-height: 74px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 800;
+      letter-spacing: -.02em;
+    }
+    .brand-mark {
+      width: 38px;
+      height: 38px;
+      border-radius: 12px;
+      display: grid;
+      place-items: center;
+      background: linear-gradient(135deg, var(--brand), var(--brand-2));
+      color: #04111d;
+      font-weight: 900;
+      box-shadow: 0 10px 28px rgba(88, 213, 255, .18);
+    }
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 26px;
+      color: #cbd7e5;
+      font-size: .95rem;
+    }
+    .nav-links a:hover, .nav-links a:focus-visible { color: var(--white); }
+    .nav-cta {
+      padding: 10px 16px;
+      border: 1px solid rgba(118, 242, 194, .35);
+      border-radius: 999px;
+      color: var(--accent) !important;
+      background: rgba(118, 242, 194, .06);
+    }
+    .menu-btn {
+      display: none;
+      border: 1px solid var(--line);
+      background: var(--panel-solid);
+      color: var(--text);
+      border-radius: 12px;
+      padding: 9px 12px;
+      font-size: 1rem;
+    }
+
+    .hero {
+      position: relative;
+      padding: 112px 0 88px;
+      overflow: hidden;
+    }
+    .hero::after {
+      content: "";
+      position: absolute;
+      width: 520px;
+      height: 520px;
+      border: 1px solid rgba(88, 213, 255, .12);
+      border-radius: 50%;
+      right: -220px;
+      top: 10px;
+      box-shadow:
+        0 0 0 80px rgba(88, 213, 255, .015),
+        0 0 0 160px rgba(125, 124, 255, .012);
+      pointer-events: none;
+    }
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      padding: 7px 11px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      color: #cbd9e8;
+      background: rgba(255,255,255,.025);
+      font-size: .78rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: .13em;
+    }
+    .eyebrow::before {
+      content: "";
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--accent);
+      box-shadow: 0 0 18px rgba(118,242,194,.75);
+    }
+    h1 {
+      max-width: 970px;
+      margin: 26px 0 24px;
+      font-size: clamp(3.2rem, 8vw, 7rem);
+      line-height: .98;
+      letter-spacing: -.065em;
+      font-weight: 850;
+    }
+    .gradient-text {
+      background: linear-gradient(100deg, #fff 0%, #bdeeff 46%, #a8a7ff 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+    .hero-copy {
+      max-width: 760px;
+      margin: 0;
+      color: var(--muted);
+      font-size: clamp(1.08rem, 2vw, 1.3rem);
+    }
+    .hero-actions {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+      margin-top: 34px;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 48px;
+      padding: 0 20px;
+      border-radius: 13px;
+      font-weight: 750;
+      transition: transform .18s ease, background .18s ease, border-color .18s ease;
+    }
+    .btn:hover { transform: translateY(-2px); }
+    .btn-primary {
+      background: linear-gradient(135deg, var(--brand), #7ad8ff);
+      color: #03111c;
+      box-shadow: 0 14px 34px rgba(88,213,255,.18);
+    }
+    .btn-secondary {
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,.035);
+      color: var(--text);
+    }
+    .tech-strip {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 9px;
+      margin-top: 52px;
+    }
+    .tech-strip span {
+      padding: 7px 10px;
+      border: 1px solid var(--line);
+      border-radius: 9px;
+      color: #8fa4ba;
+      background: rgba(255,255,255,.018);
+      font-size: .76rem;
+      font-weight: 700;
+      letter-spacing: .05em;
+    }
+
+    section { padding: 92px 0; }
+    .section-head {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(260px, 430px);
+      gap: 40px;
+      align-items: end;
+      margin-bottom: 38px;
+    }
+    .section-kicker {
+      color: var(--brand);
+      text-transform: uppercase;
+      font-size: .78rem;
+      letter-spacing: .15em;
+      font-weight: 800;
+      margin-bottom: 12px;
+    }
+    h2 {
+      margin: 0;
+      max-width: 760px;
+      font-size: clamp(2.1rem, 4.5vw, 4rem);
+      line-height: 1.05;
+      letter-spacing: -.045em;
+    }
+    .section-head p { margin: 0; color: var(--muted); }
+
+    .cap-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+    .card {
+      position: relative;
+      min-height: 250px;
+      padding: 25px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: linear-gradient(145deg, rgba(255,255,255,.045), rgba(255,255,255,.018));
+      box-shadow: inset 0 1px 0 rgba(255,255,255,.03);
+      overflow: hidden;
+    }
+    .card::after {
+      content: "";
+      position: absolute;
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(88,213,255,.12), transparent 68%);
+      top: -52px;
+      right: -42px;
+    }
+    .card-number {
+      color: #66839e;
+      font-size: .75rem;
+      font-weight: 800;
+      letter-spacing: .1em;
+    }
+    .card h3 {
+      margin: 45px 0 10px;
+      font-size: 1.25rem;
+      letter-spacing: -.02em;
+    }
+    .card p { margin: 0; color: var(--muted); font-size: .95rem; }
+
+    .research {
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+      background:
+        linear-gradient(180deg, rgba(255,255,255,.012), rgba(255,255,255,.003));
+    }
+    .project-grid {
+      display: grid;
+      grid-template-columns: 1.3fr 1fr;
+      gap: 16px;
+    }
+    .project {
+      min-height: 330px;
+      padding: 30px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--panel);
+      position: relative;
+      overflow: hidden;
+    }
+    .project:first-child {
+      background:
+        radial-gradient(circle at 80% 0%, rgba(88,213,255,.15), transparent 44%),
+        var(--panel);
+    }
+    .project-tag {
+      display: inline-block;
+      color: var(--accent);
+      font-size: .75rem;
+      font-weight: 800;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+    .project h3 {
+      margin: 76px 0 12px;
+      max-width: 540px;
+      font-size: clamp(1.5rem, 3vw, 2.35rem);
+      line-height: 1.12;
+      letter-spacing: -.035em;
+    }
+    .project p { max-width: 620px; color: var(--muted); }
+    .project-small-stack {
+      display: grid;
+      gap: 16px;
+    }
+    .project-small-stack .project {
+      min-height: 157px;
+      padding: 22px;
+    }
+    .project-small-stack .project h3 { margin: 25px 0 8px; font-size: 1.25rem; }
+    .project-small-stack .project p { margin-bottom: 0; font-size: .92rem; }
+
+    .systems-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+    .systems-panel {
+      padding: 28px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: rgba(255,255,255,.025);
+    }
+    .systems-panel h3 { margin-top: 0; font-size: 1.25rem; }
+    .systems-list {
+      display: grid;
+      gap: 13px;
+      margin-top: 22px;
+    }
+    .systems-row {
+      display: grid;
+      grid-template-columns: 128px 1fr;
+      gap: 18px;
+      padding-top: 13px;
+      border-top: 1px solid var(--line);
+    }
+    .systems-row strong { color: #d9e7f5; font-size: .9rem; }
+    .systems-row span { color: var(--muted); font-size: .9rem; }
+
+    .insight-row {
+      display: grid;
+      grid-template-columns: 160px 1fr auto;
+      gap: 25px;
+      align-items: center;
+      padding: 22px 0;
+      border-top: 1px solid var(--line);
+    }
+    .insight-row:last-child { border-bottom: 1px solid var(--line); }
+    .insight-type { color: var(--brand); font-size: .76rem; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; }
+    .insight-title { font-weight: 720; font-size: 1.05rem; }
+    .insight-arrow { color: #718aa2; font-size: 1.25rem; }
+
+    .cta {
+      padding-top: 54px;
+    }
+    .cta-box {
+      position: relative;
+      padding: 56px;
+      border-radius: 28px;
+      border: 1px solid rgba(88,213,255,.2);
+      overflow: hidden;
+      background:
+        radial-gradient(circle at 90% 15%, rgba(125,124,255,.18), transparent 35%),
+        radial-gradient(circle at 10% 100%, rgba(88,213,255,.12), transparent 38%),
+        #0b1a2b;
+      box-shadow: var(--shadow);
+    }
+    .cta-box h2 { max-width: 720px; }
+    .cta-box p { max-width: 660px; color: var(--muted); }
+
+    footer {
+      padding: 42px 0 52px;
+      color: #7f94aa;
+    }
+    .footer-row {
+      display: flex;
+      justify-content: space-between;
+      gap: 24px;
+      align-items: center;
+      border-top: 1px solid var(--line);
+      padding-top: 28px;
+      font-size: .86rem;
+    }
+    .footer-links { display: flex; gap: 18px; }
+
+    @media (max-width: 900px) {
+      .section-head { grid-template-columns: 1fr; gap: 16px; }
+      .cap-grid { grid-template-columns: 1fr 1fr; }
+      .project-grid, .systems-grid { grid-template-columns: 1fr; }
+      .project-small-stack { grid-template-columns: 1fr 1fr; }
+    }
+
+    @media (max-width: 700px) {
+      .wrap { width: min(calc(100% - 28px), var(--max)); }
+      .nav { min-height: 66px; }
+      .menu-btn { display: inline-flex; }
+      .nav-links {
+        display: none;
+        position: absolute;
+        left: 14px;
+        right: 14px;
+        top: 72px;
+        padding: 18px;
+        border: 1px solid var(--line);
+        border-radius: 16px;
+        background: #091827;
+        box-shadow: var(--shadow);
+        flex-direction: column;
+        align-items: stretch;
+        gap: 4px;
+      }
+      .nav-links.open { display: flex; }
+      .nav-links a { padding: 11px 10px; }
+      .nav-cta { margin-top: 6px; }
+      .hero { padding: 82px 0 66px; }
+      h1 { font-size: clamp(3rem, 15vw, 5.2rem); }
+      section { padding: 70px 0; }
+      .cap-grid { grid-template-columns: 1fr; }
+      .project-small-stack { grid-template-columns: 1fr; }
+      .project { min-height: 280px; }
+      .project-small-stack .project { min-height: 180px; }
+      .systems-row { grid-template-columns: 1fr; gap: 5px; }
+      .insight-row { grid-template-columns: 1fr auto; gap: 7px 18px; }
+      .insight-type { grid-column: 1 / -1; }
+      .cta-box { padding: 34px 24px; }
+      .footer-row { flex-direction: column; align-items: flex-start; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { transition: none !important; }
+    }
+  </style>
 </head>
-
 <body>
-<div class="page-shell">
-    <div class="page-card">
-        <nav class="navbar">
-            <a class="logo" href="index.html" aria-label="Zenova Systems home">Zenova Systems</a>
+  <header class="site-header">
+    <div class="wrap nav">
+      <a class="brand" href="/" aria-label="Zenova Systems home">
+        <span class="brand-mark">Z</span>
+        <span>Zenova Systems</span>
+      </a>
 
-            <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="primary-nav">Menu</button>
 
-            <button id="menuToggle" class="menu-toggle"
-                    aria-label="Toggle navigation menu"
-                    aria-controls="navMenu"
-                    aria-expanded="false"
-                    onclick="toggleMenu()">☰</button>
-
-            <ul id="navMenu" class="nav-menu">
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="solutions.html">Solutions</a></li>
-                <li><a href="blog/index.html">Blog</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-
-        <main class="page-content">
-            <section class="hero">
-                <div class="chip">Engineering + Research Platform</div>
-                <h1>Cloud, AI, Android Automotive & Quantum Experiences</h1>
-                <p>
-                    Zenova Systems is evolving into a modern software innovation studio building across
-                    Google Cloud, AI/ML, Android Automotive, embedded systems, and quantum R&D.
-                </p>
-                <div class="actions">
-                    <a class="btn-primary" href="services.html">Explore Services →</a>
-                    <a class="btn-secondary" href="contact.html">Start a Conversation</a>
-                </div>
-            </section>
-
-            <section class="section">
-                <h2 class="section-title">What Zenova Systems Offers</h2>
-
-                <div class="card-grid">
-                    <div class="card">
-                        <h3>Google Cloud Engineering</h3>
-                        <p>Serverless systems, Cloud Run, Vertex AI, platform automation.</p>
-                    </div>
-
-                    <div class="card">
-                        <h3>AI, ML & Quantum Research</h3>
-                        <p>LLM applications, ML pipelines, QML prototypes, QCNNs, experimentation.</p>
-                    </div>
-
-                    <div class="card">
-                        <h3>Android / Automotive / Embedded</h3>
-                        <p>AOSP internals, HAL integration, IVI experiences, RTOS + firmware.</p>
-                    </div>
-                </div>
-            </section>
-        </main>
-
-        <footer>
-            <p>© 2025 Zenova Systems. All rights reserved.</p>
-        </footer>
+      <nav class="nav-links" id="primary-nav" aria-label="Primary navigation">
+        <a href="#engineering">Engineering</a>
+        <a href="#research">Research</a>
+        <a href="#projects">Projects</a>
+        <a href="blog/">Insights</a>
+        <a href="about.html">About</a>
+        <a class="nav-cta" href="contact.html">Contact</a>
+      </nav>
     </div>
-</div>
+  </header>
 
-<script src="assets/js/main.js"></script>
+  <main>
+    <section class="hero">
+      <div class="wrap">
+        <div class="eyebrow">Engineering + Applied Research</div>
+        <h1><span class="gradient-text">Engineering intelligent systems</span><br>from edge to cloud.</h1>
+        <p class="hero-copy">
+          Applied R&amp;D across artificial intelligence, embedded systems, automotive platforms,
+          cloud infrastructure, systems performance, and emerging computing.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#engineering">Explore Engineering →</a>
+          <a class="btn btn-secondary" href="#research">View Research</a>
+        </div>
+        <div class="tech-strip" aria-label="Technology areas">
+          <span>AI / ML</span><span>EDGE AI</span><span>C / C++</span><span>RUST</span>
+          <span>AOSP / AAOS</span><span>LINUX</span><span>GOOGLE CLOUD</span><span>QUANTUM R&amp;D</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="engineering">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <div class="section-kicker">Engineering domains</div>
+            <h2>Where software meets systems.</h2>
+          </div>
+          <p>
+            Zenova focuses on technically demanding problems that span device software,
+            intelligent applications, connected platforms, and system-level reliability.
+          </p>
+        </div>
+
+        <div class="cap-grid">
+          <article class="card">
+            <div class="card-number">01 / INTELLIGENCE</div>
+            <h3>AI &amp; Intelligent Systems</h3>
+            <p>LLMs, RAG, agentic workflows, on-device ML, inference optimization, and AI-assisted engineering.</p>
+          </article>
+          <article class="card">
+            <div class="card-number">02 / EDGE</div>
+            <h3>Embedded &amp; Edge Computing</h3>
+            <p>C/C++, Rust, Linux, firmware, IPC, device services, diagnostics, and constrained-system design.</p>
+          </article>
+          <article class="card">
+            <div class="card-number">03 / MOBILITY</div>
+            <h3>Automotive Platforms</h3>
+            <p>Android Automotive, AOSP, HAL integration, CAN, BLE, telematics, infotainment, and platform services.</p>
+          </article>
+          <article class="card">
+            <div class="card-number">04 / CLOUD</div>
+            <h3>Cloud &amp; Connected Systems</h3>
+            <p>Google Cloud, Firebase, APIs, OTA workflows, observability, backend integration, and connected-device architecture.</p>
+          </article>
+          <article class="card">
+            <div class="card-number">05 / PERFORMANCE</div>
+            <h3>Systems Performance</h3>
+            <p>Concurrency, race conditions, deadlocks, memory behavior, latency analysis, profiling, and reliability engineering.</p>
+          </article>
+          <article class="card">
+            <div class="card-number">06 / RESEARCH</div>
+            <h3>Emerging R&amp;D</h3>
+            <p>Quantum ML, QCNN experimentation, edge intelligence, hybrid architectures, and AI-assisted software development.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="research" id="research">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <div class="section-kicker">Applied research</div>
+            <h2>Exploring architectures before they become obvious.</h2>
+          </div>
+          <p>
+            Research themes connect practical engineering with new methods in AI,
+            embedded computing, automotive software, and quantum machine learning.
+          </p>
+        </div>
+
+        <div class="project-grid" id="projects">
+          <article class="project">
+            <span class="project-tag">Featured / Edge AI</span>
+            <h3>Voice-first embedded AI systems with edge-to-cloud intelligence.</h3>
+            <p>
+              Architecture research around local inference, machine interfaces, hardware integration,
+              diagnostics, OTA, secure backend communication, and cloud-assisted reasoning.
+            </p>
+          </article>
+
+          <div class="project-small-stack">
+            <article class="project">
+              <span class="project-tag">Automotive</span>
+              <h3>AAOS &amp; AOSP platform engineering</h3>
+              <p>HAL integration, connectivity, system services, performance, audio, and platform reliability.</p>
+            </article>
+            <article class="project">
+              <span class="project-tag">Quantum ML</span>
+              <h3>QCNN &amp; hybrid learning experiments</h3>
+              <p>Exploring quantum-assisted classification and hybrid classical/quantum workflows.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <div class="section-kicker">Technical depth</div>
+            <h2>Built across the full stack of intelligent devices.</h2>
+          </div>
+          <p>From low-level execution and device integration to cloud services and AI workflows.</p>
+        </div>
+
+        <div class="systems-grid">
+          <div class="systems-panel">
+            <h3>Systems &amp; platform engineering</h3>
+            <div class="systems-list">
+              <div class="systems-row"><strong>Languages</strong><span>C, C++, Rust, Java, Kotlin, Python</span></div>
+              <div class="systems-row"><strong>Platforms</strong><span>Linux, Android, AOSP, AAOS, RTOS</span></div>
+              <div class="systems-row"><strong>Connectivity</strong><span>BLE, Wi‑Fi, CAN, NFC, IPC, messaging</span></div>
+              <div class="systems-row"><strong>Reliability</strong><span>Profiling, concurrency, memory, diagnostics, security</span></div>
+            </div>
+          </div>
+
+          <div class="systems-panel">
+            <h3>AI, cloud &amp; research</h3>
+            <div class="systems-list">
+              <div class="systems-row"><strong>AI / ML</strong><span>LLMs, RAG, TensorFlow, TFLite, scikit-learn</span></div>
+              <div class="systems-row"><strong>Cloud</strong><span>Google Cloud, Firebase, APIs, automation, observability</span></div>
+              <div class="systems-row"><strong>Edge AI</strong><span>Quantization, pruning, latency tuning, constrained inference</span></div>
+              <div class="systems-row"><strong>Research</strong><span>QCNN, quantum ML, hybrid architectures, experimentation</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <div class="section-kicker">Insights</div>
+            <h2>Engineering notes, architecture, and research.</h2>
+          </div>
+          <p>Technical writing focused on practical system design and emerging computing approaches.</p>
+        </div>
+
+        <a class="insight-row" href="blog/">
+          <span class="insight-type">Embedded AI</span>
+          <span class="insight-title">Designing intelligent systems across constrained devices and cloud services</span>
+          <span class="insight-arrow">↗</span>
+        </a>
+        <a class="insight-row" href="blog/">
+          <span class="insight-type">Systems</span>
+          <span class="insight-title">Concurrency, performance, and reliability in modern embedded platforms</span>
+          <span class="insight-arrow">↗</span>
+        </a>
+        <a class="insight-row" href="blog/">
+          <span class="insight-type">Research</span>
+          <span class="insight-title">Quantum-assisted machine learning and QCNN architecture experiments</span>
+          <span class="insight-arrow">↗</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="wrap">
+        <div class="cta-box">
+          <div class="section-kicker">Build / Research / Explore</div>
+          <h2>Working on a difficult systems problem?</h2>
+          <p>
+            Explore Zenova's engineering and research work across embedded platforms,
+            intelligent systems, automotive software, and connected cloud architectures.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="contact.html">Start a Conversation →</a>
+            <a class="btn btn-secondary" href="about.html">About Zenova</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap footer-row">
+      <div>© <span id="year"></span> Zenova Systems. Engineering + Applied Research.</div>
+      <div class="footer-links">
+        <a href="about.html">About</a>
+        <a href="blog/">Insights</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const menuButton = document.querySelector('.menu-btn');
+    const nav = document.querySelector('.nav-links');
+
+    menuButton?.addEventListener('click', () => {
+      const open = nav.classList.toggle('open');
+      menuButton.setAttribute('aria-expanded', String(open));
+    });
+
+    nav?.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        nav.classList.remove('open');
+        menuButton?.setAttribute('aria-expanded', 'false');
+      });
+    });
+
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
-<!-- test deploy -->
