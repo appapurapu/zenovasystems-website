@@ -1,0 +1,31 @@
+[
+  {
+    "id": "cpu-dsp-communication",
+    "title": "CPU \u2194 DSP Communication Architecture",
+    "category": "embedded-edge",
+    "categoryLabel": "Embedded & Edge Computing",
+    "summary": "Design patterns for communication between application CPUs and DSP processors using shared memory, queues, interrupts, and IPC.",
+    "tags": [
+      "DSP",
+      "IPC",
+      "C++",
+      "Firmware"
+    ],
+    "date": "2026-09-06",
+    "gist": "https://gist.githubusercontent.com/USERNAME/GIST_ID/raw/article.md"
+  },
+  {
+    "id": "embedded-pub-sub",
+    "title": "Publish / Subscribe Architecture for Embedded Systems",
+    "category": "embedded-edge",
+    "categoryLabel": "Embedded & Edge Computing",
+    "summary": "How event-driven messaging can reduce coupling between embedded services while keeping behavior observable and testable.",
+    "tags": [
+      "Pub/Sub",
+      "IPC",
+      "Embedded"
+    ],
+    "date": "2026-09-06",
+    "gist": "https://gist.githubusercontent.com/USERNAME/GIST_ID/raw/article.md"
+  }
+]
