@@ -1,84 +1,117 @@
-<!DOCTYPE html>
-
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About – Zenova Systems</title>
-    <meta name="description" content="Learn about the mission, capabilities, and future vision for Zenova Systems across cloud, AI, Android, embedded, and quantum engineering." />
-    <meta property="og:title" content="About Zenova Systems" />
-    <meta property="og:description" content="Discover the story and focus areas driving Zenova Systems." />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://zenovasystems.com/about.html" />
-    <link rel="canonical" href="https://zenovasystems.com/about.html" />
-    <link rel="stylesheet" href="assets/css/styles.css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About | Zenova Systems</title>
+  <meta name="description" content="Learn about Zenova Systems, an engineering and applied research platform focused on AI, embedded systems, automotive software, cloud platforms, and emerging computing.">
+  <link rel="canonical" href="https://zenovasystems.com/about.html">
+  <link rel="stylesheet" href="assets/css/zenova-theme.css">
 </head>
-
 <body>
-<div class="page-shell">
-    <div class="page-card">
-        <nav class="navbar">
-            <a class="logo" href="index.html" aria-label="Zenova Systems home">Zenova Systems</a>
-
-            <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark mode">🌙</button>
-
-            <button id="menuToggle" class="menu-toggle"
-                    aria-label="Toggle navigation menu"
-                    aria-controls="navMenu"
-                    aria-expanded="false"
-                    onclick="toggleMenu()">☰</button>
-
-            <ul id="navMenu" class="nav-menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="solutions.html">Solutions</a></li>
-                <li><a href="blog/index.html">Blog</a></li>
-                <li><a href="about.html" class="active">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-
-        <main class="page-content">
-            <section class="hero">
-                <div class="chip">Studio Story</div>
-                <h1>Engineering leadership with a builder's mindset.</h1>
-                <p>Zenova Systems is run by a senior engineer with 15+ years across Google Cloud, AI/ML, quantum, Android Automotive, embedded, and large-scale distributed systems.</p>
-                <div class="actions">
-                    <a class="btn-primary" href="contact.html">Connect with Zenova</a>
-                </div>
-            </section>
-
-            <section class="section">
-                <div class="card card-narrow">
-                    <h3>Who I Am</h3>
-                    <p>
-                        Cloud native platform builder, AI/ML engineer, quantum researcher, and systems architect experienced in C++, Python, and Rust. Focused on product velocity with reliable engineering.
-                    </p>
-
-                    <h3>Core Focus Areas</h3>
-                    <ul>
-                        <li>Google Cloud engineering, serverless & DevOps</li>
-                        <li>AI/ML engineering, LLM pipelines, evaluation</li>
-                        <li>Quantum Machine Learning (QML), QCNNs</li>
-                        <li>Android Framework, HAL, Automotive IVI</li>
-                        <li>RTOS, firmware, embedded sensors</li>
-                        <li>Low-latency C++ & system design</li>
-                    </ul>
-
-                    <h3>The Future</h3>
-                    <p>
-                        Zenova Systems is becoming an innovation studio delivering cloud products, AI tools, quantum R&D, engineering blogs, and developer experiences.
-                    </p>
-                </div>
-            </section>
-        </main>
-
-        <footer>
-            <p>© 2025 Zenova Systems. All rights reserved.</p>
-        </footer>
+  <header class="site-header">
+    <div class="wrap nav">
+      <a class="brand" href="/"><span class="brand-mark">Z</span><span>Zenova Systems</span></a>
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="primary-nav">Menu</button>
+      <nav class="nav-links" id="primary-nav" aria-label="Primary navigation">
+        <a href="/#engineering">Engineering</a>
+        <a href="/#research">Research</a>
+        <a href="/#projects">Projects</a>
+        <a href="blog/">Insights</a>
+        <a class="active" href="about.html">About</a>
+        <a class="nav-cta" href="contact.html">Contact</a>
+      </nav>
     </div>
-</div>
+  </header>
 
-<script src="assets/js/main.js"></script>
+  <main>
+    <section class="page-hero">
+      <div class="wrap">
+        <div class="eyebrow">About Zenova</div>
+        <h1><span class="gradient-text">Engineering curiosity</span><br>into practical systems.</h1>
+        <p class="lead">Zenova Systems is an independent engineering and applied research platform exploring intelligent software from embedded devices to cloud-connected systems.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap story">
+        <div class="story-panel">
+          <div class="section-kicker">Purpose</div>
+          <h2>Research with an engineering mindset.</h2>
+          <p>Zenova brings together systems software, AI/ML, automotive platforms, cloud infrastructure, and emerging computing. The goal is to study difficult technical problems, build useful prototypes, and document lessons that can transfer across domains.</p>
+          <p>The work emphasizes practical architecture, measurable performance, reliability, and understanding how individual components behave as part of a complete system.</p>
+        </div>
+        <div class="story-panel">
+          <div class="section-kicker">Principles</div>
+          <div class="values">
+            <div class="value"><strong>Systems thinking</strong><span>Understand the full path—from low-level execution and hardware interfaces to APIs, cloud services, and user-facing experiences.</span></div>
+            <div class="value"><strong>Applied experimentation</strong><span>Prototype, measure, compare, and refine rather than relying only on theoretical assumptions.</span></div>
+            <div class="value"><strong>Performance & reliability</strong><span>Treat concurrency, memory, latency, diagnostics, security, and observability as design concerns.</span></div>
+            <div class="value"><strong>Continuous learning</strong><span>Use research and technical writing to turn individual investigations into reusable engineering knowledge.</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <div class="section-kicker">Focus areas</div>
+            <h2>Across intelligent devices and connected platforms.</h2>
+          </div>
+          <p>Zenova's interests span the layers where modern systems become most challenging.</p>
+        </div>
+        <div class="grid-3">
+          <article class="card"><div class="card-tag">AI / ML</div><h3>Intelligent Systems</h3><p>LLMs, RAG, agentic workflows, on-device inference, ML optimization, and AI-assisted engineering.</p></article>
+          <article class="card"><div class="card-tag">Embedded</div><h3>Systems Software</h3><p>C/C++, Rust, Linux, firmware, IPC, device services, concurrency, diagnostics, and performance.</p></article>
+          <article class="card"><div class="card-tag">Mobility</div><h3>Automotive Platforms</h3><p>AAOS, AOSP, HAL integration, BLE, CAN, telematics, infotainment, and connected vehicle architectures.</p></article>
+          <article class="card"><div class="card-tag">Cloud</div><h3>Connected Platforms</h3><p>Google Cloud, Firebase, APIs, OTA, observability, backend systems, and secure device-to-cloud integration.</p></article>
+          <article class="card"><div class="card-tag">Research</div><h3>Emerging Computing</h3><p>Quantum machine learning, QCNN experimentation, edge intelligence, and hybrid computing approaches.</p></article>
+          <article class="card"><div class="card-tag">Practice</div><h3>Technical Knowledge</h3><p>Architecture notes, experiments, design tradeoffs, interview-level systems thinking, and reusable engineering patterns.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="outdoor">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <div class="section-kicker">Beyond engineering</div>
+            <h2>Outdoor activities & community projects.</h2>
+          </div>
+          <p>Zenova also highlights practical side projects that combine technology with everyday interests and useful experiences.</p>
+        </div>
+        <article class="outdoor-card">
+          <div>
+            <div class="section-kicker">Outdoor Activities / Web Project</div>
+            <h2>Camping Classics</h2>
+            <p class="muted">A practical camping companion with packing checklists, camping guides, activities, and outdoor resources designed to make trip preparation simpler.</p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="https://roshan11208.github.io/Camping-Classics/" target="_blank" rel="noopener noreferrer">Explore Camping Classics ↗</a>
+            </div>
+          </div>
+          <div class="outdoor-visual" aria-hidden="true"><span>Camping • Guides • Checklists</span></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="wrap">
+        <div class="cta-box">
+          <div class="section-kicker">Explore Zenova</div>
+          <h2>From low-level systems to emerging intelligence.</h2>
+          <p>See current engineering domains, research themes, and technical insights across the Zenova platform.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="/#engineering">Explore Engineering →</a>
+            <a class="btn btn-secondary" href="blog/">Read Insights</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer><div class="wrap footer-row"><div>© <span data-year></span> Zenova Systems. Engineering + Applied Research.</div><div class="footer-links"><a href="/">Home</a><a href="blog/">Insights</a><a href="contact.html">Contact</a></div></div></footer>
+  <script src="assets/js/zenova-theme.js"></script>
 </body>
 </html>

@@ -1,76 +1,72 @@
-<!DOCTYPE html>
-
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog – Zenova Systems</title>
-    <meta name="description" content="Read the latest from Zenova Systems on Google Cloud, AI/ML, Android, embedded systems, and quantum innovation." />
-    <meta property="og:title" content="Zenova Systems Blog" />
-    <meta property="og:description" content="Insights on Google Cloud, AI, Android Automotive, embedded, and quantum engineering." />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://zenovasystems.com/blog/" />
-    <link rel="canonical" href="https://zenovasystems.com/blog/" />
-    <link rel="stylesheet" href="../assets/css/styles.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Insights | Zenova Systems</title>
+  <meta name="description" content="Zenova Systems insights on embedded systems, AI/ML, automotive platforms, systems architecture, cloud engineering, and emerging computing.">
+  <link rel="canonical" href="https://zenovasystems.com/blog/">
+  <link rel="stylesheet" href="../assets/css/zenova-theme.css">
 </head>
-
 <body>
-<div class="page-shell">
-    <div class="page-card">
-        <nav class="navbar">
-            <a class="logo" href="../index.html" aria-label="Zenova Systems home">Zenova Systems</a>
-
-            <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark mode">🌙</button>
-
-            <button id="menuToggle" class="menu-toggle"
-                    aria-label="Toggle navigation menu"
-                    aria-controls="navMenu"
-                    aria-expanded="false"
-                    onclick="toggleMenu()">☰</button>
-
-            <ul id="navMenu" class="nav-menu">
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="../services.html">Services</a></li>
-                <li><a href="../solutions.html">Solutions</a></li>
-                <li><a href="index.html" class="active">Blog</a></li>
-                <li><a href="../about.html">About</a></li>
-                <li><a href="../contact.html">Contact</a></li>
-            </ul>
-        </nav>
-
-        <main class="page-content">
-            <section class="hero">
-                <div class="chip">Insights & Deep Dives</div>
-                <h1>Zenova Systems Blog</h1>
-                <p>GCP tutorials, AI/ML updates, quantum experiments, Android & embedded engineering notes.</p>
-            </section>
-
-            <section class="section">
-                <div class="card-grid">
-                    <a href="post-template.html" class="card blog-card">
-                        <h3>Build & Deploy on Cloud Run</h3>
-                        <p>Learn to deploy your app using Docker & serverless infra.</p>
-                    </a>
-
-                    <a href="post-template.html" class="card blog-card">
-                        <h3>Understanding QCNNs</h3>
-                        <p>The future of quantum deep learning.</p>
-                    </a>
-
-                    <a href="post-template.html" class="card blog-card">
-                        <h3>Android Automotive HAL</h3>
-                        <p>A deep dive into vehicle service architecture.</p>
-                    </a>
-                </div>
-            </section>
-        </main>
-
-        <footer>
-            <p>© 2025 Zenova Systems. All rights reserved.</p>
-        </footer>
+  <header class="site-header">
+    <div class="wrap nav">
+      <a class="brand" href="../"><span class="brand-mark">Z</span><span>Zenova Systems</span></a>
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="primary-nav">Menu</button>
+      <nav class="nav-links" id="primary-nav">
+        <a href="../#engineering">Engineering</a><a href="../#research">Research</a><a href="../#projects">Projects</a>
+        <a class="active" href="./">Insights</a><a href="../about.html">About</a><a class="nav-cta" href="../contact.html">Contact</a>
+      </nav>
     </div>
-</div>
+  </header>
 
-<script src="../assets/js/main.js"></script>
+  <main>
+    <section class="page-hero">
+      <div class="wrap">
+        <div class="eyebrow">Insights</div>
+        <h1><span class="gradient-text">Engineering notes</span><br>from systems to intelligence.</h1>
+        <p class="lead">Architecture, experiments, design tradeoffs, and research notes across embedded systems, AI/ML, automotive platforms, cloud engineering, and emerging computing.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <div class="section-head">
+          <div><div class="section-kicker">Themes</div><h2>Topics worth going deeper on.</h2></div>
+          <p>This page is now structured as the technical publishing hub for Zenova Systems.</p>
+        </div>
+        <div class="grid-3">
+          <article class="card"><div class="card-tag">Embedded AI</div><h3>Edge intelligence</h3><p>On-device inference, quantization, latency tuning, voice-first systems, and edge-to-cloud architecture.</p></article>
+          <article class="card"><div class="card-tag">Systems</div><h3>C/C++ & Rust</h3><p>Concurrency, memory behavior, IPC, undefined behavior, performance, ownership, and low-level design.</p></article>
+          <article class="card"><div class="card-tag">Automotive</div><h3>AAOS & connected vehicles</h3><p>AOSP, HALs, connectivity, telematics, audio, diagnostics, security, and platform integration.</p></article>
+          <article class="card"><div class="card-tag">Cloud</div><h3>Connected platforms</h3><p>Backend systems, Firebase, Google Cloud, OTA, observability, APIs, and secure device integration.</p></article>
+          <article class="card"><div class="card-tag">AI / ML</div><h3>Applied intelligence</h3><p>LLMs, RAG, agentic workflows, anomaly detection, model evaluation, and AI-assisted engineering.</p></article>
+          <article class="card"><div class="card-tag">Research</div><h3>Quantum & emerging computing</h3><p>QCNNs, hybrid workflows, quantum-assisted classification, and experimental architectures.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <div class="section-head">
+          <div><div class="section-kicker">Featured directions</div><h2>Current writing queue.</h2></div>
+          <p>These are high-value technical themes for upcoming Zenova articles. Existing blog posts can be linked into this list as they are standardized.</p>
+        </div>
+        <div class="insight-list">
+          <div class="insight"><span class="insight-type">Embedded AI</span><div><h3>Designing an in-cab AI assistant from device services to cloud reasoning</h3><p>Hardware/software integration, voice interaction, diagnostics, connectivity, inference, and reliability.</p></div><span class="insight-arrow">01</span></div>
+          <div class="insight"><span class="insight-type">Systems</span><div><h3>Debugging deadlocks, race conditions, and latency in multi-language platforms</h3><p>A systems approach spanning C/C++, Rust, Java/Kotlin, logging, profiling, and AI-assisted debugging.</p></div><span class="insight-arrow">02</span></div>
+          <div class="insight"><span class="insight-type">Automotive</span><div><h3>From Android Automotive framework to HAL: understanding the complete execution path</h3><p>Architecture boundaries, services, Binder/IPC, native components, hardware interfaces, and debugging.</p></div><span class="insight-arrow">03</span></div>
+          <div class="insight"><span class="insight-type">Research</span><div><h3>QCNN architectures for hybrid classical/quantum machine learning</h3><p>Practical research questions, encoding choices, circuit design, evaluation, and limitations.</p></div><span class="insight-arrow">04</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="wrap"><div class="cta-box"><div class="section-kicker">Technical publishing</div><h2>Build a useful engineering knowledge base.</h2><p>As Zenova articles are published, this page can evolve into a searchable collection organized by architecture, platform, language, and research area.</p><div class="hero-actions"><a class="btn btn-primary" href="../contact.html">Discuss a Topic →</a><a class="btn btn-secondary" href="../#research">View Research</a></div></div></div>
+    </section>
+  </main>
+
+  <footer><div class="wrap footer-row"><div>© <span data-year></span> Zenova Systems. Engineering + Applied Research.</div><div class="footer-links"><a href="../">Home</a><a href="../about.html">About</a><a href="../contact.html">Contact</a></div></div></footer>
+  <script src="../assets/js/zenova-theme.js"></script>
 </body>
 </html>
