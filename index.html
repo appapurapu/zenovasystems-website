@@ -86,17 +86,6 @@
       font-weight: 800;
       letter-spacing: -.02em;
     }
-    .brand-mark {
-      width: 38px;
-      height: 38px;
-      border-radius: 12px;
-      display: grid;
-      place-items: center;
-      background: linear-gradient(135deg, var(--brand), var(--brand-2));
-      color: #04111d;
-      font-weight: 900;
-      box-shadow: 0 10px 28px rgba(88, 213, 255, .18);
-    }
     .nav-links {
       display: flex;
       align-items: center;
@@ -463,15 +452,14 @@
       *, *::before, *::after { transition: none !important; }
     }
   </style>
+  <link rel="stylesheet" href="/assets/css/brand-logo.css">
 </head>
 <body>
   <header class="site-header">
     <div class="wrap nav">
-      <a class="brand" href="/" aria-label="Zenova Systems home">
-        <span class="brand-mark">Z</span>
-        <span>Zenova Systems</span>
-      </a>
-
+	<a class="brand" href="/" aria-label="Zenova Systems home">
+  <img src="assets/images/zenova-logo.png" alt="Zenova Systems logo" class="brand-logo">
+	</a>
       <button class="menu-btn" type="button" aria-expanded="false" aria-controls="primary-nav">Menu</button>
 
       <nav class="nav-links" id="primary-nav" aria-label="Primary navigation">
